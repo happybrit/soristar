@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#131126">
+<title>ستاره‌ی سوری — کارت تولد ۴ اکتبر ۲۰۲۶</title>
+<meta name="description" content="یک کارت پستال ستاره‌ای برای تولد سوری؛ با EGGR 45، ستاره‌ای در همسایگی خورشید در فاصله‌ی حدود ۲۱ سال نوری.">
+<script src="https://telegram.org/js/telegram-web-app.js?63"></script>
+<style>
+:root{
+  --bg:#111024; --bg2:#1e1734; --cream:#fff2d2; --muted:#cbc1d6;
+  --pink:#f3a7c1; --pink2:#ffd0df; --gold:#f1c16d; --line:rgba(255,255,255,.12);
+  --panel:rgba(27,21,48,.58); --panel2:rgba(255,255,255,.055);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; min-height:100%; overflow-x:hidden; color:#f7effb;
+  font-family:Vazirmatn,"Noto Sans Arabic","Noto Sans",Tahoma,Arial,sans-serif;
+  background:
+    radial-gradient(circle at 78% 34%,rgba(179,93,139,.18),transparent 30rem),
+    radial-gradient(circle at 24% 36%,rgba(100,90,160,.14),transparent 32rem),
+    linear-gradient(145deg,var(--bg),var(--bg2) 58%,#171329);
+}
+body:before{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:99; opacity:.14;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+}
+a{color:inherit}
+button,a.button{font:inherit}
+.sky{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.star{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff7df;box-shadow:0 0 7px #fff3c5;animation:twinkle 4.6s ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:.25;transform:scale(.8)}50%{opacity:1;transform:scale(1.35)}}
+
+.topbar{
+  position:fixed; z-index:20; top:0; left:0; right:0; height:74px;
+  display:grid; grid-template-columns:1fr auto 1fr; align-items:center; padding:0 5vw;
+  border-bottom:1px solid var(--line); backdrop-filter:blur(12px);
+  background:linear-gradient(to bottom,rgba(12,10,28,.44),rgba(12,10,28,.08));
+}
+.monogram{grid-column:3;justify-self:end;font-family:Georgia,serif;letter-spacing:.22em;color:var(--cream);font-size:20px}
+.kicker{grid-column:2;justify-self:center;font-size:12px;color:#e8deea;opacity:.82}
+main{position:relative;z-index:2}
+.hero{
+  min-height:100svh; display:grid; grid-template-columns:1fr 1.06fr; align-items:center;
+  gap:clamp(28px,6vw,100px); padding:112px 8vw 60px;
+}
+.moon-wrap{display:grid;place-items:center;position:relative;min-height:520px}
+.orbit{position:absolute;border:1px solid rgba(255,244,220,.16);border-radius:50%}
+.o1{width:min(30vw,520px);height:min(30vw,520px)}
+.o2{width:min(22vw,390px);height:min(22vw,390px)}
+.orbit:after{content:"✦";position:absolute;color:var(--gold);font-size:28px;top:-16px;left:58%;filter:drop-shadow(0 0 8px rgba(242,193,109,.35))}
+.moon{
+  width:min(15vw,250px);aspect-ratio:1;display:block;overflow:visible;
+  color:var(--cream);transform:rotate(-8deg);
+  filter:drop-shadow(0 0 26px rgba(255,240,205,.16));
+}
+.moon .crescent-core{fill:currentColor}
+.spark{position:absolute;color:var(--pink);font-size:31px;left:15%;top:31%;filter:drop-shadow(0 0 10px rgba(243,167,193,.38))}
+.spark2{position:absolute;color:var(--gold);font-size:22px;right:18%;bottom:22%}
+.tiny-note{position:absolute;bottom:4%;color:#bdb4c8;font-size:11px;opacity:.85}
+
+.copy{max-width:720px;justify-self:end}
+.eyebrow{color:var(--gold);font-size:13px;margin-bottom:24px}
+.title{font-size:clamp(54px,6.3vw,104px);line-height:1.16;margin:0;font-weight:800;letter-spacing:-.04em}
+.title .cream{color:var(--cream)} .title .pink{color:var(--pink)}
+.subtitle{font-size:clamp(16px,1.45vw,22px);line-height:2.05;color:#ded5e4;max-width:650px;margin:26px 0 32px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.button{
+  text-decoration:none; border:1px solid rgba(255,255,255,.14); padding:13px 20px;border-radius:999px;
+  display:inline-flex;align-items:center;gap:10px;transition:.25s;cursor:pointer;
+}
+.primary{background:linear-gradient(135deg,var(--pink2),#efa1bd);color:#241426;border:0;font-weight:700;box-shadow:0 12px 35px rgba(238,152,184,.15)}
+.button:hover{transform:translateY(-2px)}
+.ghost{background:rgba(255,255,255,.04)}
+
+.reveal{padding:20px 8vw 110px}
+.card{
+  border:1px solid var(--line);border-radius:32px;background:linear-gradient(145deg,var(--panel),rgba(255,255,255,.025));
+  backdrop-filter:blur(18px);box-shadow:0 28px 100px rgba(0,0,0,.22);overflow:hidden;
+}
+.star-stage{
+  min-height:540px;position:relative;display:grid;place-items:center;text-align:center;padding:70px 24px 48px;
+  background:
+    radial-gradient(circle at 50% 43%,rgba(255,207,154,.12),transparent 18rem),
+    radial-gradient(circle at 50% 43%,rgba(244,162,195,.07),transparent 35rem);
+}
+.gift-star{
+  width:140px;height:140px;position:relative;display:grid;place-items:center;filter:drop-shadow(0 0 28px rgba(255,208,137,.42));
+  animation:float 5.2s ease-in-out infinite;
+}
+.gift-star:before{content:"★";font-size:116px;color:#ffd98e;text-shadow:0 0 26px rgba(255,215,142,.62),0 0 70px rgba(243,167,193,.26)}
+.gift-star:after{content:"";position:absolute;width:320px;height:95px;border:1px solid rgba(243,167,193,.46);border-radius:50%;transform:rotate(-10deg)}
+@keyframes float{50%{transform:translateY(-10px) rotate(1deg)}}
+.star-name{margin-top:20px;font-family:Georgia,serif;font-size:36px;color:var(--cream);letter-spacing:.06em}
+.alias{color:#bcb2cb;font-size:13px;margin-top:6px}
+.dedication{max-width:850px;font-size:clamp(19px,2vw,28px);line-height:2.1;margin:36px auto 0;color:#f4e9f1}
+.dedication strong{color:var(--pink2)}
+
+.timeline{display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:center;max-width:950px;margin:48px auto 0}
+.timeline .date{font-size:14px;color:#e9dce8}
+.timeline .date small{display:block;color:#a99fb6;margin-top:6px}
+.beam{height:2px;min-width:210px;background:linear-gradient(90deg,rgba(243,167,193,.15),#f5c37d,rgba(243,167,193,.15));position:relative}
+.beam:before{content:"✦";position:absolute;left:50%;top:50%;transform:translate(-50%,-52%);color:#ffd990;font-size:27px;text-shadow:0 0 18px #ffcf79}
+
+.facts{border-top:1px solid var(--line);display:grid;grid-template-columns:1.2fr .8fr}
+.fact-copy{padding:52px}
+.fact-copy h2{margin:0 0 10px;font-size:32px;color:var(--cream)}
+.fact-copy p{line-height:2;color:#cfc5d4}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:28px}
+.pill{background:var(--panel2);border:1px solid rgba(255,255,255,.08);padding:16px;border-radius:18px}
+.pill span{display:block;color:#9f95ad;font-size:11px;margin-bottom:6px}.pill b{font-size:15px;color:#f7edf6}
+.source-pane{padding:52px;border-right:1px solid var(--line);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.qr{width:158px;height:158px;border-radius:18px;padding:10px;background:white;box-shadow:0 16px 40px rgba(0,0,0,.18)}
+.source-pane h3{margin:22px 0 7px;color:var(--cream)}
+.source-pane p{font-size:13px;color:#aaa0b7;line-height:1.8;max-width:340px}
+
+.note{
+  margin:22px 8vw 100px;padding:28px 30px;border:1px solid rgba(241,193,109,.22);background:rgba(241,193,109,.05);
+  border-radius:24px;color:#d9cfdc;line-height:2;
+}
+.note summary{cursor:pointer;color:#f1d9a9;font-weight:700}
+.note p{margin:16px 0 0}
+.note code{direction:ltr;unicode-bidi:bidi-override;background:rgba(255,255,255,.06);padding:2px 7px;border-radius:7px;color:#fff0d2}
+
+footer{padding:34px 8vw 50px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;color:#a99fb2;font-size:12px}
+.heart{color:var(--pink)}
+
+.toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,30px);opacity:0;z-index:50;background:#f6e6ec;color:#271528;padding:10px 16px;border-radius:999px;transition:.25s;box-shadow:0 10px 35px rgba(0,0,0,.25)}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+@media(max-width:900px){
+  .topbar{height:64px;padding:0 20px}.kicker{display:none}
+  .hero{grid-template-columns:1fr;padding:104px 22px 54px;text-align:center}
+  .copy{justify-self:center}.moon-wrap{min-height:360px;order:2}.copy{order:1}
+  .o1{width:310px;height:310px}.o2{width:235px;height:235px}.moon{width:150px}
+  .eyebrow{margin-top:10px}.cta-row{justify-content:center}
+  .reveal{padding:8px 14px 60px}.card{border-radius:24px}.star-stage{min-height:500px}
+  .timeline{grid-template-columns:1fr;justify-items:center}.beam{width:74%;min-width:0;order:2}.date:first-child{order:1}.date:last-child{order:3}
+  .facts{grid-template-columns:1fr}.source-pane{border-right:0;border-top:1px solid var(--line)}
+  .fact-copy,.source-pane{padding:32px 22px}.grid{grid-template-columns:1fr 1fr}
+  .note{margin:18px 14px 70px;padding:22px}
+}
+@media(max-width:520px){
+  .monogram{font-size:16px}
+  .title{font-size:49px}.subtitle{font-size:15px}.grid{grid-template-columns:1fr}
+  .gift-star{transform:scale(.86)}.star-name{font-size:29px}.dedication{font-size:18px}
+}
+
+/* Telegram Mini App integration */
+:root{
+  --tg-safe-top: var(--tg-safe-area-inset-top, 0px);
+  --tg-safe-bottom: var(--tg-safe-area-inset-bottom, 0px);
+}
+body.telegram-miniapp .topbar{
+  padding-top: var(--tg-safe-top);
+  height: calc(74px + var(--tg-safe-top));
+}
+body.telegram-miniapp .hero{
+  padding-top: calc(112px + var(--tg-safe-top));
+}
+body.telegram-miniapp footer{
+  padding-bottom: calc(50px + var(--tg-safe-bottom));
+}
+@media(max-width:900px){
+  body.telegram-miniapp .topbar{
+    height: calc(64px + var(--tg-safe-top));
+  }
+  body.telegram-miniapp .hero{
+    padding-top: calc(104px + var(--tg-safe-top));
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="sky" id="sky" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="kicker">یک جهان کوچک، فقط برای تو</div>
+  <div class="monogram">S ✦ A</div>
+</header>
+
+<main>
+  <section class="hero" id="top">
+    <div class="moon-wrap" aria-hidden="true">
+      <div class="orbit o1"></div><div class="orbit o2"></div>
+      <div class="spark">✦</div><div class="spark2">✧</div>
+      <svg class="moon" viewBox="0 0 260 260" aria-hidden="true" focusable="false">
+        <defs>
+          <mask id="crescent-mask" maskUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="260" height="260" fill="black"/>
+            <circle cx="126" cy="132" r="104" fill="white"/>
+            <circle cx="171" cy="101" r="104" fill="black"/>
+          </mask>
+        </defs>
+        <circle class="crescent-core" cx="126" cy="132" r="104" mask="url(#crescent-mask)"/>
+      </svg>
+      <div class="tiny-note">برای تمام روشنایی‌هایی که با خودت می‌آوری</div>
+    </div>
+
+    <div class="copy">
+      <div class="eyebrow">برای یک نفر در تمام این جهان ✦</div>
+      <h1 class="title"><span class="cream">سوری جان،</span><br><span class="pink">تولدت مبارک.</span></h1>
+      <p class="subtitle">
+        برای بیست‌ویکمین تولدت، به‌جای چیزی که روی زمین جا بماند،
+        یک نقطه‌ی واقعی از آسمان را انتخاب کردم؛ ستاره‌ای که نورش تقریباً
+        <strong>۲۱ سال</strong> راه آمده تا به امشب برسد.
+      </p>
+      <div class="cta-row">
+        <a class="button primary" href="#gift">✦ هدیه‌ات را باز کن</a>
+        <button class="button ghost" id="copyBtn" type="button">⌁ لینک ستاره را کپی کن</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal" id="gift">
+    <article class="card">
+      <div class="star-stage">
+        <div class="gift-star" aria-hidden="true"></div>
+        <div class="star-name">EGGR 45</div>
+        <div class="alias">LP 658-2 · Gaia DR3 3022956969731332096</div>
+        <p class="dedication">
+          امشب این ستاره برای توست. نه چون می‌شود واقعاً مالک یک ستاره شد،
+          بلکه چون می‌شود یک نور واقعی را به یک خاطره گره زد:
+          <strong>نوری تقریباً هم‌سن تو.</strong>
+        </p>
+
+        <div class="timeline" aria-label="مسیر نمادین نور">
+          <div class="date">۴ اکتبر ۲۰۰۵<small>روزی که تو آمدی</small></div>
+          <div class="beam"></div>
+          <div class="date">۴ اکتبر ۲۰۲۶<small>شبی که نور را به تو هدیه می‌دهم</small></div>
+        </div>
+      </div>
+
+      <div class="facts">
+        <div class="fact-copy">
+          <h2>ستاره‌ای واقعی، نه فقط یک استعاره</h2>
+          <p>
+            EGGR 45 یک کوتوله‌ی سفید از رده‌ی طیفی DZ در صورت فلکی شکارچی است.
+            پارالاکس Gaia آن <b>۱۵۵٫۲۳۷۳ میلی‌ثانیهٔ قوسی</b> ثبت شده؛
+            یعنی فاصله‌ای حدود <b>۶٫۴۴۱۷ پارسک</b> یا <b>۲۱٫۰۱۰۲ سال نوری</b>.
+          </p>
+
+          <div class="grid">
+            <div class="pill"><span>فاصله</span><b>≈ ۲۱٫۰۱۰۲ سال نوری</b></div>
+            <div class="pill"><span>نوع</span><b>کوتولهٔ سفید · DZ</b></div>
+            <div class="pill"><span>صورت فلکی</span><b>شکارچی · Orion</b></div>
+            <div class="pill"><span>مختصات J2000</span><b dir="ltr">05:55:09.53 −04:10:07.07</b></div>
+          </div>
+        </div>
+
+        <aside class="source-pane">
+          <img class="qr" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASgAAAEoAQAAAADDfFG0AAAB+ElEQVR4nO2aUWsDMQyDpXH//y9/e7Cd3NYy9nT2WFIo6UVQYWJFds7oF+PjN6CDOqiXcUmOWWw04/xh9spU9i3xikg5Y2VkpPiqlansm1C2JVlCQpYlEc/sRl4DUdf9h0FGVOwaef0FFFjC2EJLvfp5TUJd0tpKTsnPWLFXprJ/HiUq73jzKchU9s+jvGUqjITrUOS2NJV9j/9Ky4UshMNS5IkZKTmVfRsq4lQnoy3fDNh49h2oUPjUehA4ctLHr76gQrVwRgxJDiHzycdXVLotkzbVSjmLPB3O/lGUIMqgtA/UMwHUbCr7lvMxK0WZ3GCh9SVoYi77FpT3nqoOhRxxKjEbzP5hVOYjOacsxH7KycdvKCQD6F5iS3k4+uTjd1S4rJAtXHqv1d2Zzf5RVIiXCe3CS+KjhJSO3n8Zl+QwWXfDqrXJIp5T2XflowA7bevqF+YGO/XQbax+dGWic2bSTxy9f4fK1r20HYZtTv34FuWlYNW3D6m38OlP3MdVvjTjFA6sgldn5VT2Tf6+Jll3U/MK5fH3a9zut9OtYnCV25mpU9k3nY/V9sqaW7uxqtP/+glVIo+rZxid125ec1Bf3geoVjTZCnNdr01l34Qi26hVde/robRko9k/irq0ujim3mXC+f6X4zZyLPuu/sST/3hQ/wn1CUFjDyR8IPMLAAAAAElFTkSuQmCC" alt="QR کد مشاهدهٔ سه‌بعدی EGGR 45">
+          <h3>ستاره را سه‌بعدی ببین</h3>
+          <p>این QR و دکمه‌ی زیر، EGGR 45 را مستقیماً در نقشه‌ی سه‌بعدی Starcarta باز می‌کند.</p>
+          <div class="cta-row" style="justify-content:center;margin-top:10px">
+            <a class="button primary" href="https://starcarta.app/o/VVWq" target="_blank" rel="noopener">نمای سه‌بعدی ✦</a>
+            <a class="button ghost" href="https://simbad.u-strasbg.fr/simbad/sim-basic?Ident=EGGR++45" target="_blank" rel="noopener">منبع علمی SIMBAD</a>
+          </div>
+        </aside>
+      </div>
+    </article>
+  </section>
+
+  <details class="note">
+    <summary>یادداشت علمی کوچک برای بانوی عزیزم</summary>
+    <p>
+      فاصله‌ی دقیق Gaia برای EGGR 45 حدود <b>۲۱٫۰۱۰۲ سال نوری</b> است.
+      بنابراین اگر زمان رسیدن نور را دقیق حساب کنیم، فوتون‌هایی که در شب
+      <b>۴ اکتبر ۲۰۲۶</b> به ما می‌رسند، تقریباً در حوالی
+      <b>۳۰ سپتامبر ۲۰۰۵</b> حرکتشان را آغاز کرده‌اند، نه دقیقاً ۴ اکتبر.
+      به همین دلیل متن عرض کردم «تقریباً هم‌سن تو» و تاریخ ۴ اکتبر را
+      به‌عنوان محور احساسی کارت نگه می‌دارد. این نزدیک‌ترین تطابق زیبا و مستندی است
+      که برای ایده‌ی ۲۱ سال نوری پیدا کردم.
+    </p>
+  </details>
+</main>
+
+<footer>
+  <div>برای سوری — ۴ اکتبر ۲۰۲۶ · با <span class="heart">♡</span> از آنیس</div>
+  <div>امیدوارم محبت و برکت ستاره سوری مسیر زندگی بانوی عزیزم را روشن کند و به آن برکت ببخشد.</div>
+</footer>
+
+<div class="toast" id="toast">لینک ستاره کپی شد ✦</div>
+
+<script>
+(() => {
+
+  // Telegram Mini App integration. The page still works normally in a browser.
+  const tg = window.Telegram?.WebApp;
+  if (tg) {
+    document.body.classList.add('telegram-miniapp');
+    try {
+      tg.ready();
+      tg.expand();
+      tg.setHeaderColor('#131126');
+      tg.setBackgroundColor('#111024');
+    } catch (e) {
+      // Keep the postcard usable even on older Telegram clients.
+    }
+  }
+
+  const sky = document.getElementById('sky');
+  // deterministic pseudo-random starfield
+  let seed = 20051004;
+  const rand = () => (seed = (seed * 1664525 + 1013904223) >>> 0) / 4294967296;
+  for (let i=0;i<95;i++){
+    const s=document.createElement('i'); s.className='star';
+    const size = rand() < .12 ? 3 : (rand() < .35 ? 2 : 1);
+    s.style.width=size+'px'; s.style.height=size+'px';
+    s.style.left=(rand()*100)+'%'; s.style.top=(rand()*100)+'%';
+    s.style.animationDelay=(-rand()*5)+'s'; s.style.animationDuration=(3+rand()*5)+'s';
+    s.style.opacity=(.25+rand()*.65);
+    sky.appendChild(s);
+  }
+
+const toast=document.getElementById('toast');
+  document.getElementById('copyBtn').addEventListener('click', async ()=>{
+    const url='https://starcarta.app/o/VVWq';
+    try{await navigator.clipboard.writeText(url)}
+    catch(e){
+      const t=document.createElement('textarea');t.value=url;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();
+    }
+    toast.classList.add('show'); setTimeout(()=>toast.classList.remove('show'),1700);
+  });
+})();
+</script>
+</body>
+</html>
